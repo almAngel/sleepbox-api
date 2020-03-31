@@ -18,6 +18,6 @@ from django.urls import path
 from core import view
 
 urlpatterns = [
-    path('', view.home),
+    path('/', view.home),
     #path('upstream/box')
 ]
