@@ -38,6 +38,7 @@ router.register(r'users', UserViewSet)
 """
 
 router = routers.DefaultRouter()
+router.register(r'home', view.home)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
