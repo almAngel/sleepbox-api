@@ -44,8 +44,8 @@ router = routers.DefaultRouter()
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    url(r'^', hello_view.hello_world),
-    url(r'^batch/upstream', batch_view.upstream)
+    url('home', hello_view.hello_world),
+    url('batch', batch_view.upstream)
     #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
 
