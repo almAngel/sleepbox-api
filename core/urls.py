@@ -20,7 +20,7 @@ from django.conf.urls import url, include
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
 from core.viewsets.hello_viewset import HelloViewSet
-from core.views import hello_view
+from core.views import hello_view, batch_view
 
 """ 
 # Serializers define the API representation.
@@ -45,6 +45,7 @@ router = routers.DefaultRouter()
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     url(r'^', hello_view.hello_world),
+    url(r'^batch/upstream', batch_view.upstream)
     #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
 
