@@ -19,6 +19,8 @@ from core import view
 from django.conf.urls import url, include
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
+from core.viewsets.hello_viewset import HelloViewSet
+from core.views import hello_view
 
 """ 
 # Serializers define the API representation.
@@ -38,11 +40,12 @@ router.register(r'users', UserViewSet)
 """
 
 router = routers.DefaultRouter()
-router.register(r'home', view.home)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    url(r'^', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^', hello_view.hello_world),
+    #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
+
+urlpatterns += router.urls
