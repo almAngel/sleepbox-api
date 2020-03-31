@@ -1,1 +1,1 @@
-web: python manage.py runserver
+web: gunicorn sleepbox-api.wsgi --log-file -
