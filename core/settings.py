@@ -25,7 +25,7 @@ SECRET_KEY = 'q=vkv31+pz69yp(dc2h6*+1!k6^f1=dt2c@=p(+m7=8n-d2&@w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sleepbox-api.herokuapp.com']
 
 
 # Application definition
