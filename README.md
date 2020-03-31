@@ -4,7 +4,10 @@
 
 - Ruta base: https://sleepbox-api.herokuapp.com/
 
-- /batch -> POST
+
++ https://sleepbox-api.herokuapp.com/batch
+    - POST
+
     ```json
         {
             "device_id": "El id del dispositivo", // Ejemplo: 834975656u
