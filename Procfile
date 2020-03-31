@@ -1,1 +1,1 @@
-web: gunicorn sleepbox-api.wsgi:application
+web: gunicorn PROJECT_NAME.wsgi --log-file -
