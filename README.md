@@ -8,7 +8,7 @@
     > + https://sleepbox-api.herokuapp.com/batch
     >    - POST
     >
-    >    ```json
+    >    ```javascript
     >        {
     >            "device_id": "El id del dispositivo", // Ejemplo: 834975656u
     >            "timestamp": 3478693632 // Ejemplo: 1585659128 *
