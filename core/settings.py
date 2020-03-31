@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['sleepbox-api.herokuapp.com']
 
+import os.path
+PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
+PROJECT_NAME = os.path.basename(PROJECT_ROOT)
 
 # Application definition
 

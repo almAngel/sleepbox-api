@@ -1,1 +1,1 @@
-web: gunicorn core.wgsi --log-file -
+web: gunicorn core --log-file -
